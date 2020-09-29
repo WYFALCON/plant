@@ -1,0 +1,347 @@
+<html>
+  <head>
+    <title>A-Frame Starter Kit - Plant World</title>
+    <meta
+      name="description"
+      content="Plant World"
+    />
+  
+
+
+    <!-- This turns our HTML into A-Frame! -->
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+
+
+  <body>
+    <a-scene>
+      <!-- changed color to pastel yellow #feffde the hex number/ ended up changing it to clouds-->
+  <a-assets>
+        <img id="sky" src="https://cdn.glitch.com/bc49658f-c52e-4251-817b-59bc0ce838e8%2F94-942820_collection-of-free-vector-clouds-cumulus-cloud-cloud.png?v=1601384016034" />
+     </a-assets> 
+      <a-sky src="#sky" material="" geometry="" rotation="0 -100 -0.42000000000000004"></a-sky>
+    
+      <!-- i got rid of all the planets and replaced them with my flower spheres-->
+      <!-- going to insert my interactive flowers :)have to change name in entiti portion -->
+      <a-entity id="blue-flower" position="4 2 -10">
+        <a-sphere
+          position="0.01 0 0"
+          radius=".8"
+          color="#F8EC99"
+          id="center"
+          material=""
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0.87 -1.01 0"
+          radius=".8"
+          color="#F8EC99"
+          id="blue-6"
+          material="color:#cbf1ff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-0.63 -1.07 0"
+          radius=".8"
+          color="#F8EC99"
+          id="blue-5"
+          material="color:#cbf1ff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-1.07 0.28 0"
+          radius=".8"
+          color="#F8EC99"
+          id="blue-4"
+          material="color:#cbf1ff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="1.14 0.37 0"
+          radius=".8"
+          color="#F8EC99"
+          id="blue-3"
+          material="color:#cbf1ff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0 1.35 0"
+          radius=".8"
+          color="#F8EC99"
+          id="blue-2"
+          material="color:#cbf1ff"
+          geometry=""
+        ></a-sphere>
+
+        <!-- above is my intial blue flower code so i dont lose it going to insert the others under this -->
+      </a-entity>
+      <a-entity id="pink-flower" position="0.15361 4.69531 -10">
+        <a-sphere
+          position="0.01 0 0"
+          radius=".8"
+          color="#F8EC99"
+          id="center-1"
+          material=""
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0.87 -1.01 0"
+          radius=".8"
+          color="#F8EC99"
+          id="pink-6"
+          material="color:#f4a4c0"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-0.63 -1.07 0"
+          radius=".8"
+          color="#F8EC99"
+          id="pink-5"
+          material="color:#f4a4c0"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-1.07 0.28 0"
+          radius=".8"
+          color="#F8EC99"
+          id="pink-4"
+          material="color:#f4a4c0"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="1.14 0.37 0"
+          radius=".8"
+          color="#F8EC99"
+          id="pink-3"
+          material="color:#f4a4c0"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0 1.35 0"
+          radius=".8"
+          color="#F8EC99"
+          id="pink-2"
+          material="color:#f4a4c0"
+          geometry=""
+        ></a-sphere>
+        <a-entity id="purp-flower" position="-4 2.25012 0">
+          <a-sphere
+            position="0.01 0 "
+            radius=".8"
+            color="#F8EC99"
+            id="center-2"
+            material=""
+            geometry=""
+          ></a-sphere
+          ><a-sphere
+            position="0.87 -1.01 0"
+            radius=".8"
+            color="#F8EC99"
+            id="purp-6"
+            material="color:#f1caff"
+            geometry=""
+          ></a-sphere
+          ><a-sphere
+            position="-0.63 -1.07 0"
+            radius=".8"
+            color="#F8EC99"
+            id="purp-5"
+            material="color:#f1caff"
+            geometry=""
+          ></a-sphere
+          ><a-sphere
+            position="-1.07 0.28 0"
+            radius=".8"
+            color="#F8EC99"
+            id="purp-4"
+            material="color:#f1caff"
+            geometry=""
+          ></a-sphere
+          ><a-sphere
+            position="1.14 0.37 0"
+            radius=".8"
+            color="#F8EC99"
+            id="purp-3"
+            material="color:#f1caff"
+            geometry=""
+          ></a-sphere
+          ><a-sphere
+            position="0 1.35 0"
+            radius=".8"
+            color="#F8EC99"
+            id="purp-2"
+            material="color:#f1caff"
+            geometry=""
+          ></a-sphere>
+          <a-entity id="white-flower" position="0.1 -5 0">
+            <a-sphere
+              position="0.01 0 0"
+              radius=".8"
+              color="#F8EC99"
+              id="center-4"
+              material=""
+              geometry=""
+            ></a-sphere
+            ><a-sphere
+              position="0.87 -1.01 0"
+              radius=".8"
+              color="#F8EC99"
+              id="white-6"
+              material="color:#ffffff"
+              geometry=""
+            ></a-sphere
+            ><a-sphere
+              position="-0.63 -1.07 0"
+              radius=".8"
+              color="#F8EC99"
+              id="white-5"
+              material="color:#ffffff"
+              geometry=""
+            ></a-sphere
+            ><a-sphere
+              position="-1.07 0.28 0"
+              radius=".8"
+              color="#F8EC99"
+              id="white-4"
+              material="color:#ffffff"
+              geometry=""
+            ></a-sphere
+            ><a-sphere
+              position="1.14 0.37 0"
+              radius=".8"
+              color="#F8EC99"
+              id="white-3"
+              material="color:#ffffff"
+              geometry=""
+            ></a-sphere
+            ><a-sphere
+              position="0 1.35 0"
+              radius=".8"
+              color="#F8EC99"
+              id="white-2"
+              material="color:#ffffff"
+              geometry=""
+            ></a-sphere> </a-entity></a-entity
+      ></a-entity>
+      <!-- going to be adding flowers all around below will be that code-->
+      <a-entity id="white-flower2" position="7 2 -8">
+        <a-sphere
+          position="0.01 0 0"
+          radius=".8"
+          color="#F8EC99"
+          id="center-5"
+          material=""
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0.87 -1.01 0"
+          radius=".8"
+          color="#F8EC99"
+          id="white2-6"
+          material="color:#ffffff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-0.63 -1.07 0"
+          radius=".8"
+          color="#F8EC99"
+          id="white2-5"
+          material="color:#ffffff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="-1.07 0.28 0"
+          radius=".8"
+          color="#F8EC99"
+          id="white2-4"
+          material="color:#ffffff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="1.14 0.37 0"
+          radius=".8"
+          color="#F8EC99"
+          id="white2-3"
+          material="color:#ffffff"
+          geometry=""
+        ></a-sphere
+        ><a-sphere
+          position="0 1.35 0"
+          radius=".8"
+          color="#F8EC99"
+          id="white2-2"
+          material="color:#ffffff"
+          geometry=""
+        ></a-sphere
+      ></a-entity>
+      
+          <!--this is my floor/ plane -->
+<a-plane position="0.45965 -1.460 -3.14131" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow="" material="color:#b1de8c;flatShading:true;vertexColors:face;roughnessTextureOffset:22.12 0;roughnessTextureRepeat:7.32 1" geometry="primitive:icosahedron" scale="10.54 11.55 1.91"></a-plane>
+
+      <!--these are my stems -->
+
+      <a-entity id="stem5" position="7.01 -0.13 -7.79" scale="0.22 3.87 0.22">
+        <a-cylinder
+          position="-0.05153 -0.24 -0.34826"
+          radius=".8"
+          color="#F8EC99"
+          id="cylinder5"
+          material="color:#b1de8c"
+          geometry=""
+          rotation="-0.49000000000000005 0 0"
+        ></a-cylinder
+      ></a-entity>
+      <a-entity id="stem4" position="-3.587 -0.130 -9.833" scale="0.22 3.87 0.22">
+        <a-cylinder
+          position="-0.05153 -0.24 -0.34826"
+          radius=".8"
+          color="#F8EC99"
+          id="cylinder4"
+          material="color:#b1de8c"
+          geometry=""
+          rotation="-0.49000000000000005 0 0"
+        ></a-cylinder
+      ></a-entity>
+      <a-entity id="stem3" position="-3.706 4.518 -10.086" scale="0.22 8 0.22">
+        <a-cylinder
+          position="-0.05153 -0.24 -0.34826"
+          radius=".8"
+          color="#F8EC99"
+          id="cylinder3"
+          material="color:#b1de8c"
+          geometry=""
+          rotation="-0.49000000000000005 0 0"
+        ></a-cylinder
+      ></a-entity>
+      <a-entity id="stem2" position="0.302 2.471 -9.943" scale="0.22 3.87 0.22">
+        <a-cylinder
+          position="-0.05153 -0.24 -0.34826"
+          radius=".8"
+          color="#F8EC99"
+          id="cylinder2"
+          material="color:#b1de8c"
+          geometry=""
+          rotation="-0.49000000000000005 0 0"
+        ></a-cylinder
+      ></a-entity>
+      <a-entity id="stem" position="4.121 -0.130 -9.812" scale="0.22 3.87 0.22">
+        <a-cylinder
+          position="-0.05153 -0.24 -0.34826"
+          radius=".8"
+          color="#F8EC99"
+          id="cylinder"
+          material="color:#b1de8c"
+          geometry=""
+          rotation="-0.49000000000000005 0 0"
+        ></a-cylinder
+      ></a-entity>
+    </a-scene>
+     
+    
+    <!-- include the Glitch button to show what the webpage is about and to
+        make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
+
